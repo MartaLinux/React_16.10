@@ -3,7 +3,7 @@ var myInput = document.getElementById('myInput');
 var inputEmail = document.getElementById("exampleInputEmail1");
 var form = document.getElementById("callback-form");
 var output = document.getElementById("output");
-var confirmMyModal = document.getElementById("confirm-user")
+var confirmMyModal = document.getElementById("confirm-user");
 
 myModal.addEventListener('shown.bs.modal', function () {
   var modalBody = myModal.querySelector('.modal-body');
@@ -12,9 +12,11 @@ myModal.addEventListener('shown.bs.modal', function () {
 confirmMyModal.addEventListener('click', function () {
    form.classList.add("d-none")
    var outputText = output.querySelector('.text');
-   outputText.textContent = 'Hello user '+inputEmail.value;
+   outputText.textContent = 'Hello user '+inputEmail.value  ;
+   
    output.classList.remove("d-none")
    output.classList.add("d-block")
+
   })
 
 /*
