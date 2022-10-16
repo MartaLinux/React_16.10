@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container" id="mainContainer">
+
+        <form action="./app.js">
+            <p class="title-form">Create an account</p>
+            <div class="entry">
+                <div class="entry-fields">
+                    <div class="entry-field">
+                        <label for="InputEmail">Email address</label>
+                        <input type="text" id="InputEmail" placeholder="example@gmail.com" name="email" required>
+
+                    </div>
+                    <div class="entry-field">
+                        <label for="InputPassword">Password</label>
+                        <input type="password" id="InputPassword" placeholder="Enter your password" name="psw" required>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </form>
+        <div class="submit-btn">
+            <button type="submit" id="myBtn" class="myBtn">Submit</button>
+        </div>
+        
+
+
+        <!-- Modal content -->
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <p id="modalText">Please confirm account creation for </p>
+                <div class="modal-block">
+                    <div class="modal-buttons">
+                        <button type="button" class="btn-cansel" id="btn-cancel">Cansel</button>
+                        <button type="button" class="btn-confirm" id="btn-confirm">Confirm</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="container hide" id="output">
+        <div class="text">
+            Hello, user 
+        </div>
+        <div id="avatar" >
+            <img src="img/149071.png" style="width: 50%;max-width:150px">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+
+</body>
